@@ -51,6 +51,7 @@ alias gitap="git add -p"
 alias gitc="git commit -m"
 alias gits="git status"
 alias gitsubr="git submodule update --init --recursive"
+alias bl="black --line-length=120 ."
 alias weather="curl wttr.in/"
 
 alias tmuxa="tmux attach -dt 0"
