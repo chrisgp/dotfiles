@@ -118,7 +118,7 @@ autocmd FileType h,c,cpp setlocal formatoptions-=o
 
 " Prevent smartindent's forcing of # chars to the
 " beginning of the line.  See :help smartindent
-inoremap # X#
+" inoremap # X#
 
 " turn off the beep and visual bell
 set noerrorbells visualbell t_vb=
