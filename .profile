@@ -62,6 +62,8 @@ alias less="less --mouse"
 alias cpresearch="cd /hgm/research_scratch/cpiller/"
 alias gm1="cd ~/gm.dev/platform/"
 alias gm2="cd ~/gm.dev2/platform/"
+alias gm3="cd ~/gm.dev3/platform/"
+alias gm4="cd ~/gm.dev4/platform/"
 
 function pretty_csv {
   echo "$@"; column -t -s, -n "$@" | less -F -S -X -K; echo
