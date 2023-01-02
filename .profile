@@ -56,6 +56,8 @@ alias weather="curl wttr.in/"
 
 alias tmuxa="tmux attach -dt 0"
 
+alias prp="poetry run python"
+
 alias lessnm="less"
 alias less="less --mouse"
 
