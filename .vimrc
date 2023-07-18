@@ -36,6 +36,9 @@ Plug 'jeetsukumaran/vim-buffergator'
 " C2H - use :C2H to switch from cpp to h file.  Bound to '#' below.
 Plug 'linluk/vim-c2h'
 
+" cpp highlighting
+Plug 'bfrg/vim-cpp-modern'
+
 " Initialize plugin system (Use PlugInstall to install newly-added plugins.)
 call plug#end()
 

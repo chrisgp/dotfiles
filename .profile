@@ -70,6 +70,7 @@ alias gm4="cd ~/gm.dev4/platform/"
 function pretty_csv {
   echo "$@"; column -t -s, -n "$@" | less -F -S -X -K; echo
 }
+alias pc="pretty_csv"
 
 function ssh-copy-id-if-needed()
 {
@@ -78,6 +79,23 @@ function ssh-copy-id-if-needed()
     if [[ $? -ne 0 ]]; then
         ssh-copy-id $host
     fi
+}
+
+function buildlvim()
+{
+  ./bazel build -c opt "$1" 2>&1 | tee /dev/tty | lvim -R -
+}
+function fbuildlvim()
+{
+  ./format_code && buildlvim "$1"
+}
+function testlvim()
+{
+  ./bazel test -c opt "$1" 2>&1 | tee /dev/tty | lvim -R -
+}
+function ftestlvim()
+{
+  ./format_code && testlvim "$1"
 }
 
 export PATH="$HOME/.poetry/bin:$PATH"

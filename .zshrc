@@ -88,6 +88,7 @@ unset __conda_setup
 plugins=(
   #tmux,
   zsh-autosuggestions
+  zsh-history-substring-search
   )
 
 source $ZSH/oh-my-zsh.sh
@@ -137,3 +138,4 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 source $HOME/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $ZSH_CUSTOM/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
